@@ -12,7 +12,7 @@ import Image from "gatsby-image"
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/main_1000.png/" }) {
+      avatar: file(absolutePath: { regex: "/avatar.png/" }) {
         childImageSharp {
           fixed(width: 100, height: 100) {
             ...GatsbyImageSharpFixed
@@ -41,7 +41,7 @@ const Bio = () => {
         display: `flex`,
         padding: 15,
         // backgroundColor: "#fff",
-        backgroundColor: "#000",
+        backgroundColor: "#040404",
         color: "#fff",
         width: "100%",
         borderRadius: 10,
@@ -64,16 +64,10 @@ const Bio = () => {
         }}
       />
       <div>
-        <div style={{width: "100%", fontSize: 19, lineHeight: 1.7}}>
-          Hi 👋 I'm <b>David Shekunts</b> and I'm training Full-stack TypeScript soldiers who understand how to create IT products.
-          {/*<div style={{height: 15}}/>*/}
-          {/*<div style={{display: "flex", flexWrap: "wrap", fontSize: "12px"}}>*/}
-          {/*  {*/}
-          {/*    author.tags.map(tag => {*/}
-          {/*      return <span key={tag} style={{padding: "7px 7px", marginRight: 5, marginBottom: 5, backgroundColor: "#de14a9", borderRadius: 5}}>{ tag }</span>*/}
-          {/*    })*/}
-          {/*  }*/}
-          {/*</div>*/}
+        <div style={{width: "100%", fontSize: 21, lineHeight: 1.6}}>
+          Hi 👋 I'm <span style={{backgroundColor: "rgb(190, 36, 234)", padding: "2px 6px"}}>David Shekunts</span> and I teach how to build <span style={{backgroundColor: "rgb(190, 36, 234)", padding: "2px 6px"}}>
+            Enterprise Full-stack TypeScript
+          </span> applications.
         </div>
       </div>
     </div>
