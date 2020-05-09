@@ -1,4 +1,3 @@
-import "../components/global.scss"
 // import Typography from "typography"
 // import OceanBeach from "typography-theme-ocean-beach"
 //
