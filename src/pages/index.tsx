@@ -41,9 +41,9 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
         <Bio />
       </div>
       <div>
-        <div style={{display: "flex", fontSize: 18, flexWrap: "wrap", width: "100%", padding: "5px 15px"}}>
+        {/*<div style={{display: "flex", fontSize: 18, flexWrap: "wrap", width: "100%", padding: "5px 15px"}}>
           <span style={{backgroundImage: "linear-gradient(0deg,#f857a6,#ff5858)", padding: "15px", marginRight: 5, marginBottom: 5, color: "#fff", backgroundColor: "#de14a9", borderRadius: 7}}>#Fullstack</span>
-        </div>
+        </div>*/}
         <div style={{display: "flex", flexWrap: "wrap", width: "100%"}}>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
