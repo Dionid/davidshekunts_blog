@@ -33,7 +33,13 @@
   border-radius: 15px;
   padding: 45px 60px;
 
-  header, section {
+  section {
+    width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header {
     width: 580px;
     margin-left: auto;
     margin-right: auto;
@@ -58,7 +64,7 @@
     margin-top: 30px;
   }
   h1 + p {
-    margin-top: 0px;
+    margin-top: 10px;
   }
   p {
     margin-top: 27px;
