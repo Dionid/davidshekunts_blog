@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
       }}>
         {children}
       </main>
-      <footer style={{padding: 15, textAlign: "center"}}>
+      <footer style={{padding: "30px 15px", textAlign: "center"}}>
         © 2014-{new Date().getFullYear()}, David Shekunts
       </footer>
     </div>

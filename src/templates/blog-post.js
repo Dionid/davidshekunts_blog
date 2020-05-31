@@ -16,55 +16,43 @@ const BlogPostTemplate = ({ data, pageContext }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article className={"article"}>
-        <header>
-          <h1
-            style={{
-              marginTop: 15,
-              marginBottom: 0,
-            }}
-          >
-            {post.frontmatter.title}
-          </h1>
-          <p
-            style={{
-            }}
-          >
-            {post.frontmatter.date}
-          </p>
-        </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <footer className={"footer"}>
-          <Bio />
-        </footer>
-      </article>
-      {/* POSTS NAVIGATION */}
-      <nav style={{width: "100%", marginTop: 30}}>
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
+      <div className={"article-wr"}>
+        <article className={"article"}>
+          <header>
+            <h1
+              style={{
+                marginTop: 15,
+                marginBottom: 0,
+              }}
+            >
+              {post.frontmatter.title}
+            </h1>
+            <p
+              style={{
+              }}
+            >
+              {post.frontmatter.date}
+            </p>
+          </header>
+          <section dangerouslySetInnerHTML={{ __html: post.html }} />
+          <footer className={"footer"}>
+            <Bio />
+          </footer>
+        </article>
+        {/* POSTS NAVIGATION */}
+        <nav style={{width: "100%", marginTop: 30}}>
+          {previous && (
+            <Link to={previous.fields.slug} rel="prev" className={"link link__prev"}>
+              {"<-"} {previous.frontmatter.title}
+            </Link>
+          )}
+          {next && (
+            <Link to={next.fields.slug} rel="next" className={"link link__next"}>
+              {next.frontmatter.title} {"->"}
+            </Link>
+          )}
+        </nav>
+      </div>
     </Layout>
   )
 }

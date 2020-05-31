@@ -1,13 +1,37 @@
 
+.article-wr {
+  nav {
+    padding: 0 15px 60px;
+    display: flex;
+    .link{
+      padding: 30px;
+      background-color: #fff;
+      box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 3px;
+      width: 50%;
+      border-radius: 15px;
+      font-size: 20px;
+      &__prev {
+        text-align: right;
+        margin-right: 15px;
+      }
+      &__next {
+        text-align: left;
+        margin-left: auto;
+      }
+
+    }
+  }
+}
+
 .article {
   display: flex;
   //align-items: center;
   flex-direction: column;
-  margin: 10px 15px 60px;
+  margin: 10px 15px 30px;
   background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 3px;
   border-radius: 15px;
   padding: 45px 60px;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 3px;
 
   header, section {
     width: 580px;
