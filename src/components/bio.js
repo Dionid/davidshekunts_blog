@@ -65,9 +65,9 @@ const Bio = () => {
       />
       <div>
         <div style={{width: "100%", fontSize: 21, lineHeight: 1.6}}>
-          Hi 👋 I'm <span style={{backgroundColor: "rgb(190, 36, 234)", padding: "2px 6px"}}>David Shekunts</span> and I teach how to build <span style={{backgroundColor: "rgb(190, 36, 234)", padding: "2px 6px"}}>
-            Enterprise Full-stack TypeScript
-          </span> applications.
+          Hi 👋 I'm <span style={{backgroundColor: "rgb(190, 36, 234)", padding: "2px 6px"}}>David Shekunts</span> and I train cyber-warriors how to build <span style={{backgroundColor: "rgb(190, 36, 234)", padding: "2px 6px"}}>
+            Modern Full-stack Applications
+          </span>
         </div>
       </div>
     </div>

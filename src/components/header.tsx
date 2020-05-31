@@ -17,8 +17,6 @@ const Header = () => {
 
   const {icon} = data
 
-  console.log(icon)
-
   return (
     <div style={{width: "100%", padding: "15px 15px 10px 15px", justifyContent: "center"}}>
       <div style={{
@@ -47,11 +45,11 @@ const Header = () => {
             // }}
           />
         </a>
-        <div style={{display: "flex"}}>
+        {/*<div style={{display: "flex"}}>
           <a style={{marginRight: 20}} href="/posts">Posts</a>
           <a style={{marginRight: 20}} href="/posts">Courses</a>
           <a style={{}} href="/posts">Contacts</a>
-        </div>
+        </div>*/}
       </div>
     </div>
   )

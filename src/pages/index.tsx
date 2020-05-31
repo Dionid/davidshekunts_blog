@@ -1,5 +1,6 @@
 // Gatsby supports TypeScript natively!
 import "../components/global.scss"
+import "../utils/typography"
 import React from "react"
 import { PageProps, Link, graphql } from "gatsby"
 
@@ -47,8 +48,8 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
-              <div style={{padding: "10px 15px", width: "33%", display: "flex", minHeight: 400}}>
-                <article key={node.fields.slug} style={{position: "relative", padding: "45px 30px", backgroundColor: "#fff", width: "100%", borderRadius: 15, boxShadow: "0px 1px 3px rgba(0,0,0,.08)"}}>
+              <div key={node.fields.slug} style={{padding: "10px 15px", width: "33%", display: "flex", minHeight: 400}}>
+                <article style={{position: "relative", padding: "45px 30px", backgroundColor: "#fff", width: "100%", borderRadius: 15, boxShadow: "0px 1px 3px rgba(0,0,0,.08)"}}>
                   <header style={{display: "flex", height: "100%", flexDirection: "column", justifyContent: "space-between"}}>
                     <h3
                       style={{
