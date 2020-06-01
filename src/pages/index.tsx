@@ -54,8 +54,9 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
                     <h3
                       style={{
                         fontSize: 30,
-                        fontWeight: 700,
+                        fontWeight: 500,
                         marginBottom: 30,
+                        lineHeight: 1.3,
                       }}
                     >
                       {title}
