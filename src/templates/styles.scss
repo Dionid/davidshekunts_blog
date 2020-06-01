@@ -32,16 +32,27 @@
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 3px;
   border-radius: 15px;
-  padding: 45px 60px;
+  padding: 45px 15px;
+
+  a {
+    font-weight: 700;
+    border-bottom: 2px dashed #ffae00;
+    transition: 0.3s;
+    &:hover{
+      color: #ffae00;
+    }
+  }
 
   section {
-    width: 580px;
+    max-width: 580px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
 
   header {
-    width: 580px;
+    max-width: 580px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
