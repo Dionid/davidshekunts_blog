@@ -40,7 +40,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
           </footer>
         </article>
         {/* POSTS NAVIGATION */}
-        <nav style={{width: "100%", marginTop: 30}}>
+        <nav>
           {previous && (
             <Link to={previous.fields.slug} rel="prev" className={"link link__prev"}>
               {"<-"} {previous.frontmatter.title}
