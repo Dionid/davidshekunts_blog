@@ -2,7 +2,7 @@
 
 .article-wr {
   nav {
-    padding: 0 15px 60px;
+    padding: 0 15px 30px;
     display: flex;
     width: 100%;
     .link{
@@ -38,7 +38,7 @@
     margin: 10px 0 30px;
   }
 
-  a {
+  a:not(img) {
     font-weight: 700;
     border-bottom: 2px dashed #ffae00;
     transition: 0.3s;
@@ -97,7 +97,7 @@
   }
 
   :not(pre) > code[class*="language-"] {
-    padding: 3px 10px;
+    padding: 2px 7px;
     background: #e8e8e8;
     text-shadow: none;
   }

@@ -7,28 +7,29 @@ description: What is Domain Driven Design Light and why to use it
 ![Domain Driven Design Light](./dddl.png)
 
 # DDD and DDD Light
-DDD and DDD Light - is the experience of the best solutions of many architects and developers,
-who faced the same problems due to the growth of their projects.
+`Domain Driven Design (DDD)` and `Domain Driven Design Light (DDDL)` - are the set of the best
+ solutions of many architects and developers, who faced the same problems due to the growth of
+  their projects.
 
-The main goal of DDD and DDD Light is to reduce the complexity of modifying existing and introducing new functionality
-with the growth of the application.
+The main goal of `DDD` and `DDD Light` is to reduce the complexity of modifying existing and
+ introducing new functionality with the growth of the application.
 
 ![Maintainability problem](./maintanability.jpg)
 
 # Difference between DDD Light and DDD
 
-DDD Light (DDDL) removes many of the concepts of standard DDD in favor of speed of development
+`DDDL` removes many of the concepts of standard `DDD` in favor of speed of development
 and faster entry of new team members (both developers and managers) into the process, which
 allows you to use it even when writing MVPs.
 
-To be even more precise, DDDL is a set of plug & play concepts. Choose exactly those that you
+To be even more precise, `DDDL` is a set of plug & play concepts. Choose exactly those that you
 like, use them for health, learn to apply different concepts for different tasks.
 
 # DDDL components
-There are two components: (1) Design and (2) Implementation.
+There are two components: (1) `Design` and (2) `Implementation`.
 
 ## Design
-The main idea of the DDD approach is the ability to quickly penetrate into the context of a
+The main idea of the `DDD` approach is the ability to quickly penetrate into the context of a
 business, communicate effectively and solve business problems.
 
 We will definitely touch upon the topic of analyzing the project and creating from this very
@@ -56,7 +57,7 @@ but this is an approach to organizing code that is convenient for writing minima
 important tests.
 
 # When DDDL is needed
-There are 2 main situations for using DDDL: (1) Enterprise and (2) Maximum Flexibility.
+There are 2 main situations for using DDDL: (1) `Enterprise` and (2) `Maximum Flexibility`.
 
 ## Enterprise
 
@@ -91,8 +92,11 @@ Ready recipes:
     ? - `Integration and Domain Events` will help bring this logic away.
 1. etc.
 
-I know it seems complicated. But a close look will notice a branched tree of problems and solutions.
- If you can predict some branch of this tree at the start of the project, then you can immediately lay down these concepts, then you will get the fruits in the form of ready-made solutions. If not, then wait for the rupture of the anus and begin to enter them after.
+I know it seems complicated. But a close look will notice a **branched tree of problems and
+ solutions**.
+ If you can predict some branch of this tree at the start of the project, then you can
+  immediately lay down these concepts, then you will get the fruits in the form of ready-made
+   solutions. If not, then wait for the rupture of the anus and begin to enter them after.
 
 From the very beginning of any long-term project in any language and framework from an average size,
  I would always use:
@@ -119,9 +123,9 @@ cyberwarrior, capable of writing cool software anytime, anywhere.
 # When DDDL is NOT worth using
 
 Firstly, if you have a project that just needs to be done and quickly: an API in a week, an online
-store in a month, an internal project in a couple of days - then you do not need DDDL.
+store in a month, an internal project in a couple of days - then you do not need `DDDL`.
 
-Secondly, break your software into modules, and use DDDL only where it is needed:
+Secondly, break your software into modules, and use `DDDL` only where it is needed:
 
 1. Need authentication? Use Auth0, Cognito, Ory
 1. Need content management for a system / application? Uncover some (Headless) CMS.
@@ -130,7 +134,7 @@ Secondly, break your software into modules, and use DDDL only where it is needed
 1. Need CRUD / Real-time? Then Firebase, Hasura or some kind of automatic generation library (like
  FeathersJS) is at your service.
 1. Do you need a module that will combine all this and turn all this mess into a specific product
- (for example, a distance learning platform)? Voooot here, then we will use DDDL to write 
+ (for example, a distance learning platform)? Voooot here, then we will use `DDDL` to write 
  high-quality and most flexible software.
  
 As you can see, the point-based application of the required technologies allows achieving the 
