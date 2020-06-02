@@ -42,7 +42,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
           <Bio />
         </div>
         <div className={"main--header--contacts"}>
-          <div className="main--header--contacts--item" style={{width: "100%"}}><div className="main--header--contacts--item--content">
+          <div className="main--header--contacts--item main--header--contacts--item__fw"><div className="main--header--contacts--item--content">
             mail@davidshekunts.com
           </div></div>
           <div className="main--header--contacts--item"><div className="main--header--contacts--item--content">
@@ -51,7 +51,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
           <div className="main--header--contacts--item"><div className="main--header--contacts--item--content">
             Tg: <a className={"link"} href="https://teleg.run/davidshekunts_blog" target={"_blank"}>@davidshekunts_blog</a>
           </div></div>
-          <div className="main--header--contacts--item" style={{width: "100%"}}><div className="main--header--contacts--item--content">
+          <div className="main--header--contacts--item main--header--contacts--item__fw"><div className="main--header--contacts--item--content">
             Facebook: <a className={"link"} href="https://www.facebook.com/davidshekunts" target={"_blank"}>David Shekunts</a>
           </div></div>
         </div>

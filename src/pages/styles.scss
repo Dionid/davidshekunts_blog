@@ -33,6 +33,21 @@
         border-radius: 5px;
         box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 3px;
       }
+      &.main--header--contacts--item__fw{
+        width: 100%;
+      }
+      @include less-than-tablet-h{
+        width: auto;
+        &.main--header--contacts--item__fw{
+          width: auto;
+        }
+      }
+      @include less-than-tablet-v{
+        width: 100%;
+        &.main--header--contacts--item__fw{
+          width: 100%;
+        }
+      }
     }
   }
 }
