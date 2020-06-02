@@ -43,7 +43,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
         </div>
         <div className={"main--header--contacts"}>
           <div className="main--header--contacts--item main--header--contacts--item__fw"><div className="main--header--contacts--item--content">
-            mail@davidshekunts.com
+            Email: mail@davidshekunts.com
           </div></div>
           <div className="main--header--contacts--item"><div className="main--header--contacts--item--content">
             Github: <a className={"link"} href="https://github.com/Dionid" target={"_blank"}>Dionid</a>
