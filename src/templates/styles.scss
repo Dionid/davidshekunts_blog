@@ -93,7 +93,7 @@
     }
     @include mobile{
       line-height: 1.5;
-      font-size: 18px;
+      font-size: 19px;
     }
   }
 
@@ -118,8 +118,12 @@
       color: #000;
       font-smoothing: subpixel-antialiased;
       -webkit-font-smoothing: subpixel-antialiased;
+      @include mobile{
+        line-height: 1.5;
+        font-size: 19px;
+      }
     }
-    ul {
+    ul, ol {
       padding-top: 0;
     }
   }
