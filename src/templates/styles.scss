@@ -1,3 +1,4 @@
+@import "./../styles/mixins.scss";
 
 .article-wr {
   nav {
@@ -33,6 +34,9 @@
   box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 3px;
   border-radius: 15px;
   padding: 45px 15px;
+  @include mobile {
+    margin: 10px 0 30px;
+  }
 
   a {
     font-weight: 700;
@@ -65,8 +69,8 @@
     font-weight: 900;
   }
   h1 {
-    font-size: 45px;
-    line-height: 1.3;
+    font-size: 40px;
+    line-height: 1.2;
     font-weight: 700;
     & + p {
       margin-top: 30px;
@@ -87,6 +91,9 @@
     & + h1, h2, h3 {
       margin-top: 45px;
     }
+    @include mobile{
+      line-height: 1.6;
+    }
   }
 
   :not(pre) > code[class*="language-"] {
@@ -98,6 +105,7 @@
   ul, ol {
     list-style: none;
     padding-top: 30px;
+    padding-left: 17px;
     li {
       list-style: disc;
       list-style-position: outside;
@@ -115,7 +123,8 @@
   }
 
   .footer {
-    width: 580px;
+    max-width: 580px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 45px;

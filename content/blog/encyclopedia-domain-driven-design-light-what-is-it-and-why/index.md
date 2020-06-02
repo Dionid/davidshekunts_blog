@@ -1,8 +1,10 @@
 ---
-title: Encyclopedia. DDD Light. What is and why?
+title: Encyclopedia. DDD Light. What is it and why?
 date: "2020-06-01T22:40:32.169Z"
 description: What is Domain Driven Design Light and why to use it
 ---
+
+![Domain Driven Design Light](./dddl.png)
 
 # DDD and DDD Light
 DDD and DDD Light - is the experience of the best solutions of many architects and developers,
@@ -22,7 +24,7 @@ allows you to use it even when writing MVPs.
 To be even more precise, DDDL is a set of plug & play concepts. Choose exactly those that you
 like, use them for health, learn to apply different concepts for different tasks.
 
-# What DDDL consists of
+# DDDL components
 There are two components: (1) Design and (2) Implementation.
 
 ## Design

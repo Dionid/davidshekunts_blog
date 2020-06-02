@@ -3,7 +3,7 @@ import "../components/global.scss"
 import "../utils/typography"
 import { PageProps, Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
+import Bio from "../components/bio/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
