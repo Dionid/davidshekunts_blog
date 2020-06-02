@@ -33,7 +33,7 @@
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 3px;
   border-radius: 15px;
-  padding: 45px 15px;
+  padding: 45px 20px;
   @include mobile {
     margin: 10px 0 30px;
   }
@@ -92,7 +92,8 @@
       margin-top: 45px;
     }
     @include mobile{
-      line-height: 1.6;
+      line-height: 1.5;
+      font-size: 18px;
     }
   }
 
@@ -100,6 +101,7 @@
     padding: 2px 7px;
     background: #e8e8e8;
     text-shadow: none;
+    line-height: 1.8;
   }
 
   ul, ol {

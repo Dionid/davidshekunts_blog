@@ -16,6 +16,18 @@ $m-desktop: 1440px;
   }
 }
 
+@mixin less-than-tablet-v {
+  @media (max-width: #{$tablet-v - 1px}) {
+    @content;
+  }
+}
+
+@mixin less-than-tablet-h {
+  @media (max-width: #{$tablet-h - 1px}) {
+    @content;
+  }
+}
+
 @mixin desktop {
   @media (min-width: #{$tablet-h + 1px}) {
     @content;
