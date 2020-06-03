@@ -1,12 +1,12 @@
-// Gatsby supports TypeScript natively!
+import * as React from "react"
 import "../components/global.scss"
 import "../utils/typography"
-import React from "react"
 import { PageProps, Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
+import Bio from "../components/bio/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import "./styles.scss"
 
 type Data = {
   site: {
@@ -37,25 +37,42 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
   return (
     <Layout>
       <SEO title="All posts" />
-      <div style={{padding: "10px 15px", width: "66%"}}>
-        <Bio />
+      <div className={"main--header"}>
+        <div className={"main--header--bio"}>
+          <Bio />
+        </div>
+        <div className={"main--header--contacts"}>
+          <div className="main--header--contacts--item main--header--contacts--item__fw"><div className="main--header--contacts--item--content">
+            Email: mail@davidshekunts.com
+          </div></div>
+          <div className="main--header--contacts--item"><div className="main--header--contacts--item--content">
+            Github: <a className={"link"} href="https://github.com/Dionid" target={"_blank"}>Dionid</a>
+          </div></div>
+          <div className="main--header--contacts--item"><div className="main--header--contacts--item--content">
+            Tg: <a className={"link"} href="https://teleg.run/davidshekunts_blog" target={"_blank"}>@davidshekunts_blog</a>
+          </div></div>
+          <div className="main--header--contacts--item main--header--contacts--item__fw"><div className="main--header--contacts--item--content">
+            Facebook: <a className={"link"} href="https://www.facebook.com/davidshekunts" target={"_blank"}>David Shekunts</a>
+          </div></div>
+        </div>
       </div>
       <div>
         {/*<div style={{display: "flex", fontSize: 18, flexWrap: "wrap", width: "100%", padding: "5px 15px"}}>
           <span style={{backgroundImage: "linear-gradient(0deg,#f857a6,#ff5858)", padding: "15px", marginRight: 5, marginBottom: 5, color: "#fff", backgroundColor: "#de14a9", borderRadius: 7}}>#Fullstack</span>
         </div>*/}
-        <div style={{display: "flex", flexWrap: "wrap", width: "100%"}}>
+        <div className={"posts-list"}>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
-              <div key={node.fields.slug} style={{padding: "10px 15px", width: "33%", display: "flex", minHeight: 400}}>
+              <div key={node.fields.slug} className={"posts-list--item"}>
                 <article style={{position: "relative", padding: "45px 30px", backgroundColor: "#fff", width: "100%", borderRadius: 15, boxShadow: "0px 1px 3px rgba(0,0,0,.08)"}}>
                   <header style={{display: "flex", height: "100%", flexDirection: "column", justifyContent: "space-between"}}>
                     <h3
                       style={{
                         fontSize: 30,
-                        fontWeight: 700,
+                        fontWeight: 500,
                         marginBottom: 30,
+                        lineHeight: 1.3,
                       }}
                     >
                       {title}

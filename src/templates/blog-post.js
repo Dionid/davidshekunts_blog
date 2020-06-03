@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
+import Bio from "../components/bio/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styles from "./styles.scss"
@@ -40,7 +40,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
           </footer>
         </article>
         {/* POSTS NAVIGATION */}
-        <nav style={{width: "100%", marginTop: 30}}>
+        <nav>
           {previous && (
             <Link to={previous.fields.slug} rel="prev" className={"link link__prev"}>
               {"<-"} {previous.frontmatter.title}
