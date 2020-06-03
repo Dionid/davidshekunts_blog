@@ -29,6 +29,8 @@ Use our already made Frontend with all of your answers!
 
 ![Headless FAQ Frontend](./headless_faq_frontend.png)
 
+Demo (ru): [https://faq.davidshekunts.com/](https://faq.davidshekunts.com/)
+
 ## Headless Core
 
 The main part is `Core` – it gives you GraphQL API so you can implement it on any site you want! 
@@ -50,21 +52,21 @@ Release will be in July 2020.
 What you can find from technical perspective:
 
 ## Headless Core
-1. Architecture
+1. **Architecture**
     1. Domain Driven Design Light (DDDL) [(What is it?)](/encyclopedia-domain-driven-design-light-what-is-it-and-why)
     1. Event Driven Architecture (EDA)
     1. CQRS + CQRS bus
     1. Repositories
     1. Modular monolith
     1. IoC + DI
-1. Code
+1. **Code**
     1. Telegram Bot
     1. NestJS
     1. GraphQL
     1. Knex
-1. DB
+1. **DB**
     1. PostgreSQL
-1. Deployment
+1. **Deploy**
     1. Hasura for DB
     1. Google App Engine for main App
     1. Serverless + Google Cloud Functions
