@@ -4,7 +4,7 @@ date: "2020-06-01T22:40:32.169Z"
 description: What is Domain Driven Design Light and why to use it
 ---
 
-![Domain Driven Design Light](./dddl.png)
+![Domain Driven Design Light](../../assets/dddl.png)
 
 # DDD and DDD Light
 `Domain Driven Design (DDD)` and `Domain Driven Design Light (DDDL)` - are the set of the best
@@ -14,7 +14,7 @@ description: What is Domain Driven Design Light and why to use it
 The main goal of `DDD` and `DDD Light` is to reduce the complexity of modifying existing and
  introducing new functionality with the growth of the application.
 
-![Maintainability problem](./maintanability.jpg)
+![Maintainability problem](../../assets/maintanability.jpg)
 
 # Difference between DDD Light and DDD
 

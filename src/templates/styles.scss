@@ -12,6 +12,7 @@
       width: 50%;
       border-radius: 15px;
       font-size: 20px;
+      border: none;
       &__prev {
         text-align: right;
         margin-right: 15px;
@@ -20,7 +21,10 @@
         text-align: left;
         margin-left: auto;
       }
-
+    }
+    .link--subtitle{
+      font-size: 75%;
+      padding-bottom: 10px;
     }
   }
 }
@@ -135,19 +139,4 @@
     margin-right: auto;
     padding-top: 45px;
   }
-
-  //ul {
-  //  padding-bottom: 10px;
-  //  li {
-  //    list-style: disc;
-  //    list-style-position: outside;
-  //    font-size: 20px;
-  //    line-height: 1.7;
-  //    font-weight: 400;
-  //    margin-bottom: 20px;
-  //    color: #000;
-  //    font-smoothing: subpixel-antialiased;
-  //    -webkit-font-smoothing: subpixel-antialiased;
-  //  }
-  //}
 }
