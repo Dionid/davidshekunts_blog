@@ -18,23 +18,23 @@ The main goal of `DDD` and `DDD Light` is to reduce the complexity of modifying 
 
 # Difference between DDD Light and DDD
 
-`DDDL` removes many of the concepts of standard `DDD` in favor of speed of development
+`DDD Light (DDDL)` removes many of the concepts of standard `DDD` in favor of speed of development
 and faster entry of new team members (both developers and managers) into the process, which
 allows you to use it even when writing MVPs.
 
-To be even more precise, `DDDL` is a set of plug & play concepts. Choose exactly those that you
-like, use them for health, learn to apply different concepts for different tasks.
+To be even more precise, **`DDDL` is a set of plug & play concepts**. Choose exactly those that you
+like and learn to apply different concepts for different tasks.
 
 # DDDL components
 There are two components: (1) `Design` and (2) `Implementation`.
 
 ## Design
-The main idea of the `DDD` approach is the ability to quickly penetrate into the context of a
+The main idea of the `DDD` approach is the ability to quickly "penetrate" into the context of a
 business, communicate effectively and solve business problems.
 
-We will definitely touch upon the topic of analyzing the project and creating from this very
+We will definitely touch upon the topic of analyzing the project and creating very
 cool and understandable documentation that will be incredibly useful for managers and developers.
-And when I speak of documentation, I speak of both text and video materials.
+And when I speak of documentation, I mean both text and video materials.
 
 ## Implementation
 Design patterns and methodologies:
@@ -43,62 +43,60 @@ Design patterns and methodologies:
 third-party APIs, fs and the like)
 1. `Aggregate + Rich Domain Model` - as a way to organize Application Entities and business logic
 1. `Domain Features` - as a way to highlight business logic in the context of several Entities
-1. `Application Service` - as a convenient way to organize application logic
-1. `Service Object` - to maximize SOLID domain logic and application logic
-1. `Latent CQRS` - as the rules of what the API can receive and give, and also what kind of
-operations can be performed inside the endpoint API
-1. `Minimal AOP` - as a convenient way to “stratify” logic and reuse it
+1. `Application Service` - as a convenient way to organize Application logic
+1. `Service Object` - to maximize SOLID in Domain and Application logic
+1. `Latent CQRS` - as the rules of what the API can or can't do, and also what kind of
+operations can be performed inside the endpoint
+1. `Minimal AOP` - as a convenient way to “slice” logic and reuse it
 1. `Backend for Frontend (BFF)` - as a way to aggregate data for the frontend and make the
-frontend more and more dull and the backend more intelligent
+frontend more and more "stupid" and the backend more "smart"
 1. `Domain and Intergratione Events` - to implement asynchronous operations and reduce logic
 connectivity (and also Saga, but more on that later)
-1. `Behavior UniT Test Driven Development (BUTTDD)` - check out the name, complete fucking,
-but this is an approach to organizing code that is convenient for writing minimal, but most
-important tests.
+1. `Behavior UniT Test Driven Development (BUTTDD)` - everybody love butts, but nobody love
+ write tests, but this is an approach combines the best from both worlds so you will love writing
+  tests.
 
 # When DDDL is needed
 There are 2 main situations for using DDDL: (1) `Enterprise` and (2) `Maximum Flexibility`.
 
 ## Enterprise
 
-When you are already big enough (or know that you will become such) and you need to solve scaling
+When you are already big enough (or you absolutely sure will become) and you need to solve scaling
 problems.
 
-Again, DDDL is a set of plug & play concepts. Choose those that you like and use for health.
+Again, `DDDL` is a set of plug & play concepts. Choose those that you like and use for health.
 Ready recipes:
 
 1. If you have many data sources (databases, third-party services such as Auth0, Firebase
-    , Hasura, partner APIs and so on) – the `Repository + Query Object` link will help you.
+    , Hasura, partner APIs and so on)? `Repository + Query Object` will help you.
 1. A sea of ​​complex queries litter your code base? - again take a `Repository` and get a `Query
- Object`
-     for free!
-1. If you have a lot of input APIs (user, admin and a bunch of other REST APIs, bots, they also
-     ask you to screw GraphQL) - then `BFF + Service Object` to help you
+ Object` for free!
+1. If you have a lot of input APIs (user, admin and a bunch of other REST APIs, bots, GQL) - you
+ need a magic of `BFF + Service Object`
 1. Tired of a bunch of "pass-through" logic litter the code of operations: validation
     , authorization, logging, transactions, tracing, metrics, .etc? Then you need `AOP`
-1. Tired of the mishmash inside the application: it is not clear where it is, a change in one
+1. Tired of the mishmash inside the application: a change in one
      place breaks everything else, new developers piss and cry when they see the code - then it's
      time to find out what `Application and Domain logic, Aggregate and Rich Domain Model` are
 1. Okay, we pushed everything into the services application logic and domain logic, but the
-     application services are simply bold! Then we turn towards `Service Object`
+     application services are simply fat! Then we turn towards `Service Object`
 1. Has it become difficult to write data queries? It is unclear how to mix this with business
      logic models. - `CQRS` to the rescue
 1. Does the API behave unpredictably? - again `CQRS` to the rescue
 1. Already not fit in CRUD? - again `CQRS`
 1. To write tests for the endpoint API, you need to raise the HTTP server, database, fixtures
     , Redis, beat your wife, deploy sandbox of third-party services, in short, is it impossible to
-    write unit tests? God help you ... And also `BUTTDD`
+    write unit tests? God help you... And also `BUTTDD`!
 1. Too long chains of operations, in which a lot of calls to third-party services
     ? - `Integration and Domain Events` will help bring this logic away.
 1. etc.
 
 I know it seems complicated. But a close look will notice a **branched tree of problems and
- solutions**.
- If you can predict some branch of this tree at the start of the project, then you can
-  immediately lay down these concepts, then you will get the fruits in the form of ready-made
-   solutions. If not, then wait for the rupture of the anus and begin to enter them after.
+ solutions**. If you can predict some branch of this tree at the start of the project, then you can
+  immediately lay down these concepts. If not, then wait for the *rupture of the anus* and begin
+   to enter them after.
 
-From the very beginning of any long-term project in any language and framework from an average size,
+From the very beginning of any long-term average size project in any language and framework,
  I would always use:
 
 `BUTTDD + Service Objects + Rich Domain Model + BFF + Repository + Query Object`
@@ -106,18 +104,23 @@ From the very beginning of any long-term project in any language and framework f
 The rest is optional.
 
 ## Maximum flexibility
-The situation is this: our client is foreign, asks to develop a service that will go for data in
-DynamoDB and transfer it to Firestore, so that the client application displays them in real-time, and from Firestore denormalize and put it back into DynamoDB. And since the load is very large and you need speed indefinite scaling, you need to use the serverless architecture on aws lambda.
+Situation: our client asks to develop a service that will go for data in
+DynamoDB and transfer it to Firestore, so that the client application displays them in real-time
+,  and from Firestore denormalize and put it back into DynamoDB. And since the load is very
+  large and you need speed indefinite scaling, you need to use the serverless architecture  on
+   AWS Lambda.
 
-And I'm afraid that not one MVC Framework is suited for such multi-stacking.
+And I'm afraid that no MVC Framework is suited for such task.
 
 Ok, write without MVC. But how then to structure the logic? Beat layers, make data requests and 
 then process them?
 
-**DDD Light helps you easily work with projects that require more flexibility.**
+**DDD Light helps you easily work with projects that require maximum flexibility.**
 
 And these principles apply to any language and field of development: from frontend to backend, from 
-CRM development to cryptocurrencies and IoT. Therefore, recognizing them once - you become a 
+CRM development to cryptocurrencies and IoT.
+
+Therefore, recognizing them once - you become a 
 cyberwarrior, capable of writing cool software anytime, anywhere.
 
 # When DDDL is NOT worth using
@@ -134,10 +137,9 @@ Secondly, break your software into modules, and use `DDDL` only where it is need
 1. Need CRUD / Real-time? Then Firebase, Hasura or some kind of automatic generation library (like
  FeathersJS) is at your service.
 1. Do you need a module that will combine all this and turn all this mess into a specific product
- (for example, a distance learning platform)? Voooot here, then we will use `DDDL` to write 
- high-quality and most flexible software.
+ (for example, a distance learning platform)? That is the best place to use `DDDL`.
  
-As you can see, the point-based application of the required technologies allows achieving the 
+As you can see, the **appropriate** usage of technologies allows achieving the 
 maximum result from each of them.
  
 # What's next?
@@ -146,3 +148,5 @@ In the next step, I’ll release the Table of Contents and begin to talk about E
 Aggregate from DDD.
 
 News on the release of articles, wait on the Tg channel [@davidshekunts_blog](https://teleg.run/davidshekunts_blog)
+
+See you in July 2020!
