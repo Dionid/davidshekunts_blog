@@ -27,16 +27,19 @@ Use admin panel to see all questions and write answers!
 
 Use our already made Frontend with all of your answers!
 
-![Headless FAQ Frontend](./headless_faq_frontend.png)
-
 Demo (ru): [https://faq.davidshekunts.com/](https://faq.davidshekunts.com/)
+
+![Headless FAQ Frontend](./headless_faq_frontend.png)
 
 ## Headless Core
 
-The main part is `Core` – it gives you GraphQL API so you can implement it on any site you want! 
+The main part is `Core` – it gives you `GraphQL API` so you can implement it on any site you want!
+
+![Headless FAQ Core](./headless_faq_gql.png)
 
 Especially good sync with `SSG` (like `Gatsby.js`) and Headless CMS (like `Ghost`)
 
+![Headless FAQ Core](./headless_faq_core.png)
 
 # 🔥 Free and Open Source 🔥
 
@@ -47,7 +50,16 @@ Link will be placed on this page OR you can follow my github [@dionid](https://g
 
 Release will be in July 2020.
 
-# Tech
+# You wanna get Headless FAQ?
+
+You don't have developers, but want Headless FAQ? You are luky, cause we can do instead of you
+, just for 30$.
+
+If you interested in, write me: mail@davidshekints.com or [Telegram](https://teleg.run/davidshekunts)
+@davidshekunts
+
+
+# Tech Spec
 
 What you can find from technical perspective:
 
@@ -76,6 +88,12 @@ What you can find from technical perspective:
 1. UI: React admin + Material UI
 1. Deploy: Vercel
 1. API: GraphQL + Hasura
+
+## You want to create something like this?
+
+Than subscribe to my channel [@davidshekunts_blog](https://teleg.run/davidshekunts_blog) and wait
+ till July 2020, when I will start `my new course "F🔥CKING GORGEOUS application on Node.js
+  & TypeScript & DDD Light"`
 
 # Created by
 
