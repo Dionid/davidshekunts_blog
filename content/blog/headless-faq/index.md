@@ -15,6 +15,8 @@ There is a solution! Headless FAQ!
 
 Place widget on your site for people to start asking you questions!
 
+Demo: on the bottom of this page
+
 ![Headless FAQ Widget](./headless_faq_widget.png)
 
 ## Admin panel
