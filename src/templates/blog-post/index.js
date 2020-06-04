@@ -1,11 +1,11 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Bio from "../../components/bio/bio"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 import styles from "./styles.scss"
-import { HFAQWidget } from "../waas/hfaqwiget/adapter/HFAQWidget"
+import { HFAQWidget } from "../../waas/hfaqwiget/adapter/HFAQWidget"
 
 const BlogPostTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark
