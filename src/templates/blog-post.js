@@ -37,7 +37,7 @@ const BlogPostTemplate = ({ data, pageContext }) => {
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
           <footer className={"footer"}>
-            <div style={{paddingBottom: 30}}>
+            <div style={{paddingBottom: 45}}>
               <HFAQWidget/>
             </div>
             <Bio />

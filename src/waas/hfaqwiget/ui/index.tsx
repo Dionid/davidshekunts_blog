@@ -56,12 +56,12 @@ const _HFAQUI: FunctionComponent<HFAQUIProps> = (props: HFAQUIProps) => {
     return (
         <div className={classnames(props.loading && classes.loading)}>
             <Typography variant="body1" style={{paddingBottom: 15}}>
-                Ask you question
+                Ask any question
             </Typography>
             <Paper style={{padding: 15}}>
                 {
-                    success && <Typography variant="h6" style={{padding: 15}}>
-                        Спасибо! Скоро отвечу на ваш вопрос!
+                    success && <Typography variant="body1" style={{padding: 15, margin: 0, fontWeight: 700}}>
+                        Thanks! I will answer you pretty soon!
                     </Typography>
                 }
                 {
