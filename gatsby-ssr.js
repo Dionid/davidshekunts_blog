@@ -1,0 +1,1 @@
+export { wrapRootElement } from './src/waas/hfaqwiget/core/api/wrap-root-element'
