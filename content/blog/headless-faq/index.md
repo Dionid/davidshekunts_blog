@@ -36,7 +36,7 @@ Demo (ru): [https://faq.davidshekunts.com/](https://faq.davidshekunts.com/)
 ### Headless Core
 
 The main part of the `Core` is the powerful `GraphQL API`, which allows you to make your own
- widgets, admin and client interfaces that you want! Even integrate into the mobile app!
+ widgets, admin and client interfaces that **you** want! Even integrate into the mobile app!
 
 ![Headless FAQ Core](./headless_faq_gql.png)
 
