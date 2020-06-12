@@ -4,6 +4,8 @@ date: "2020-06-03T15:00:32.169Z"
 description: The best way to get communicate with your audience
 ---
 
+[Rus version of this post](https://davidshekunts.ru/2020/06/08/proekt-bezgolovyj-faq/)
+
 ## Whaaat?
 
 You want to give your audience chance to ask you something? But they are to shy to write
