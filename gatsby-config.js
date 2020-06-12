@@ -14,6 +14,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-plugin-material-ui`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {

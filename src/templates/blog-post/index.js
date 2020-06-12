@@ -1,10 +1,11 @@
-import React from "react"
+import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Bio from "../../components/bio/bio"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 import styles from "./styles.scss"
+import { HFAQWidget } from "../../waas/hfaqwiget/adapter/HFAQWidget"
 
 const BlogPostTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark
@@ -36,6 +37,9 @@ const BlogPostTemplate = ({ data, pageContext }) => {
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
           <footer className={"footer"}>
+            <div style={{paddingBottom: 45}}>
+              <HFAQWidget/>
+            </div>
             <Bio />
           </footer>
         </article>
@@ -43,12 +47,18 @@ const BlogPostTemplate = ({ data, pageContext }) => {
         <nav>
           {previous && (
             <Link to={previous.fields.slug} rel="prev" className={"link link__prev"}>
-              {"<-"} {previous.frontmatter.title}
+              <div className={"link--subtitle"}>Previous post</div>
+              <div>
+                {previous.frontmatter.title}
+              </div>
             </Link>
           )}
           {next && (
             <Link to={next.fields.slug} rel="next" className={"link link__next"}>
-              {next.frontmatter.title} {"->"}
+              <div className={"link--subtitle"}>Next post</div>
+              <div>
+                {next.frontmatter.title} {"->"}
+              </div>
             </Link>
           )}
         </nav>

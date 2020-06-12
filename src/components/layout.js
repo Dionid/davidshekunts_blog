@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
         {children}
       </main>
       <footer style={{padding: "30px 15px", textAlign: "center"}}>
-        © 2014-{new Date().getFullYear()}, David Shekunts
+        © 2014-{new Date().getFullYear()}, David Shekunts, <a className={"link"} href="https://github.com/Dionid/davidshekunts_blog" target={"_blank"}>Github</a>
       </footer>
     </div>
   )

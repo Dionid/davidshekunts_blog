@@ -4,9 +4,9 @@ date: "2020-06-01T22:40:32.169Z"
 description: What is Domain Driven Design Light and why to use it
 ---
 
-![Domain Driven Design Light](./dddl.png)
+![Domain Driven Design Light](../../assets/dddl.png)
 
-# DDD and DDD Light
+## DDD and DDD Light
 `Domain Driven Design (DDD)` and `Domain Driven Design Light (DDDL)` - are the set of the best
  solutions of many architects and developers, who faced the same problems due to the growth of
   their projects.
@@ -14,9 +14,9 @@ description: What is Domain Driven Design Light and why to use it
 The main goal of `DDD` and `DDD Light` is to reduce the complexity of modifying existing and
  introducing new functionality with the growth of the application.
 
-![Maintainability problem](./maintanability.jpg)
+![Maintainability problem](../../assets/maintanability.jpg)
 
-# Difference between DDD Light and DDD
+## Difference between DDD Light and DDD
 
 `DDD Light (DDDL)` removes many of the concepts of standard `DDD` in favor of speed of development
 and faster entry of new team members (both developers and managers) into the process, which
@@ -25,7 +25,7 @@ allows you to use it even when writing MVPs.
 To be even more precise, **`DDDL` is a set of plug & play concepts**. Choose exactly those that you
 like and learn to apply different concepts for different tasks.
 
-# DDDL components
+## DDDL components
 There are two components: (1) `Design` and (2) `Implementation`.
 
 ## Design
@@ -56,7 +56,7 @@ connectivity (and also Saga, but more on that later)
  write tests, but this is an approach combines the best from both worlds so you will love writing
   tests.
 
-# When DDDL is needed
+## When DDDL is needed
 There are 2 main situations for using DDDL: (1) `Enterprise` and (2) `Maximum Flexibility`.
 
 ## Enterprise
@@ -123,7 +123,7 @@ CRM development to cryptocurrencies and IoT.
 Therefore, recognizing them once - you become a 
 cyberwarrior, capable of writing cool software anytime, anywhere.
 
-# When DDDL is NOT worth using
+## When DDDL is NOT worth using
 
 Firstly, if you have a project that just needs to be done and quickly: an API in a week, an online
 store in a month, an internal project in a couple of days - then you do not need `DDDL`.
@@ -142,7 +142,7 @@ Secondly, break your software into modules, and use `DDDL` only where it is need
 As you can see, the **appropriate** usage of technologies allows achieving the 
 maximum result from each of them.
  
-# What's next?
+## What's next?
 
 In the next step, I’ll release the Table of Contents and begin to talk about Entity, UseCase, and
 Aggregate from DDD.
